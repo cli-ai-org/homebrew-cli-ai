@@ -3,14 +3,14 @@ class CliAi < Formula
   desc "Discover and explore CLI tools on your system - optimized for AI agents"
   homepage "https://github.com/cli-ai-org/cli"
   url "https://github.com/cli-ai-org/cli/archive/refs/tags/v0.1.1-beta.tar.gz"
-  sha256 "b72c0cf1183028d367a3d7a8b657ba0c89b11f0615c93e5db068b563341c3c2a"
+  sha256 "d98a9115882e5cddc740eeac232b23237e766b7e17bbf297047ff4860759661e"
   license "MIT"
   version "0.1.1-beta"
 
   depends_on "go" => :build
 
   def install
-    # Build from source
+    # Build from source (files are in root of archive)
     system "go", "build", *std_go_args(ldflags: "-s -w"), "-o", bin/"cli-ai", "."
 
     # Install documentation
