@@ -2,10 +2,10 @@
 class CliAi < Formula
   desc "Discover and explore CLI tools on your system - optimized for AI agents"
   homepage "https://github.com/cli-ai-org/cli"
-  url "https://github.com/cli-ai-org/cli/archive/refs/tags/v0.1.2-beta.tar.gz"
-  sha256 "32b911842515dec4e57581387363c63fc1b5405d8407aa711c85d58ad17cda17"
+  url "https://github.com/cli-ai-org/cli/archive/refs/tags/v0.1.3-beta.tar.gz"
+  sha256 "88cdebe8c6df6f696263f1ee5c1603673ee02ef2db937497fb30e8db02ce0586"
   license "MIT"
-  version "0.1.2-beta"
+  version "0.1.3-beta"
 
   depends_on "go" => :build
 
